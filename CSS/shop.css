@@ -1,0 +1,91 @@
+*{
+    font-family: 'Jost', sans-serif; 
+}
+main img
+{
+    width: 350px;
+    /* height: 60vh; */
+    margin-bottom: 3.5rem;
+    border-radius: 5px;
+    transform: translateY(30px);
+    transition: transform 2s ease;
+}
+main img:hover 
+{
+    transform: translateY(0px);
+    transition: transform 2s ease;
+}
+
+
+.shop .shop-item
+{   width: 80%;
+    margin: 4rem auto;
+    display: grid;
+    /* justify-content:space-around; */
+    /* align-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    /* grid-template-rows: repeat(3,1fr); */
+    gap: 8rem;
+    /* background-color: aqua; */
+    
+}
+.shop .shop-item .shop-item-text
+{
+   padding-left: 1rem;
+   /* background-color: aqua; */
+   margin-bottom: 2rem;
+}
+.shop .shop-item .shop-item-text h5
+{
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+    color: #de8d38;
+    font-weight: bold;
+    position: relative;
+}
+.shop .shop-item .shop-item-text p
+{
+    font-weight: 300;
+    position: relative;
+    color: black;
+    position: relative;
+    font-size: 2rem;
+}
+.shop .shop-item .shop-item-text span
+{  
+    padding: 1.2rem;
+   background-color: #de8d38;
+   color: black;
+   text-align: center;
+   border-radius: 5px;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.shop .shop-item .shop-item-text h5::after
+{
+    content: 'Rs 1000';
+    width: 40%;
+    /* height: 2px; */
+    position: absolute;
+    top: 0.6rem;
+    left: 7.5rem;
+    text-decoration: line-through;
+    /* background: #de8d38; */
+    color: silver;
+    font-size:1.3rem;
+}
+.shop .shop-item .shop-item-text p::after
+{
+    content: '70% off';
+    width: 40%;
+    /* height: 2px; */
+    position: absolute;
+    top: 3.4rem;
+    left: 13rem;
+    /* background: #de8d38; */
+    color: green;
+    font-size:1.3rem;
+    font-weight: bold;
+}
